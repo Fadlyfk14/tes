@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AndiB Coffe Beans</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  </head>
+  <body style="height: max-content;">
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.jpg.jfif" width="80px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/logo shopping.png" width="30px" height="30px" /></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+    </div>
+
+    <!---------- contact-page ---------->
+    <div class="contact-page" style="background-image: url(../TES/images/background.jpg);background-size: 150%; background-repeat: no-repeat;" >
+      <div class="main">
+        <h2>Contact Us</h2>
+        <div class="border"></div>
+        <form>
+          <div>
+            <input type="text" name="" required="" placeholder="Name" />
+          </div>
+          <div>
+            <input type="text" email="" required="" placeholder="Email" />
+          </div>
+          <div>
+            <input type="text" subject="" required="" placeholder="Subject" />
+          </div>
+          <div>
+            <textarea required="" placeholder="Message"></textarea>
+          </div>
+          <input type="submit" name="" value="Submit" />
+        </form>
+      </div>
+    </div>
+
+    <!----------js for toggle menu---------->
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+
+    <!----------js for toggle menu---------->
+
+    <script>
+      var LoginForm = document.getElementById('LoginForm');
+      var RegForm = document.getElementById('RegForm');
+      var Indicator = document.getElementById('Indicator');
+
+      function register() {
+        RegForm.style.transform = 'translateX(0px)';
+        LoginForm.style.transform = 'translateX(0px)';
+        Indicator.style.transform = 'translateX(100px)';
+      }
+      function login() {
+        RegForm.style.transform = 'translateX(300px)';
+        LoginForm.style.transform = 'translateX(300px)';
+        Indicator.style.transform = 'translateX(0px)';
+      }
+    </script>
+  </body>
+</html>

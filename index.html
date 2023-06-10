@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AndiB Coffe Beans</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  </head>
+  <body style="height: max-content;">
+    <div class="header" style="background-image: url(../TES/images/background.jpg);background-size: 150%; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.jpg.jfif" width="115px" />
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/logo shopping.png" width="30px" height="30px" /></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2" >
+            <h1>
+              Give your Newday With<br />
+              a Cup of Coffe!
+            </h1>
+            <p>nanti kita cari slogannya yaaa</p>
+            <a href="products.html" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img src="images/home-png.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------ featured categories ------>
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/cart-item-1.png" />
+          </div>
+          <div class="col-3">
+            <img src="images/cart-item-2.png" />
+          </div>
+          <div class="col-3">
+            <img src="images/cart-item-3.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------ featured Products ------>
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/kopi sipirok.jpg" />
+          <h4>Kopi Sipirok</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp.50.000</p>
+        </div>
+        <div class="col-4">
+          <img src="images/kopi-humbang.png" />
+          <h4>Kopi Humbang</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp.85.000</p>
+        </div>
+        <div class="col-4">
+          <img src="images/kopi-karo.png" />
+          <h4>Kopi Karo</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp.75.000</p>
+        </div>
+        <div class="col-4">
+          <img src="images/kopi-lintong.png" />
+          <h4>Kopi Lintong</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp.50.000</p>
+        </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+          <div class="col-4">
+            <img src="images/kopi-mandailing.png" />
+            <h4>Kopi Mandailing</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Rp.175.000</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kopi-sidikalang.png" />
+            <h4>Kopi Sidikalang</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Rp.45.000</p>
+          </div>
+          <div class="col-4">
+            <img src="images/kopi-simalungun.png" />
+            <h4>Kopi Simalungun</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Rp.60.000</p>
+          </div>
+          <div class="col-4">
+            <a href="product-details.html"><img src="images/kopi-tarutung.png" /></a>
+            <a href="product-details.html"> <h4>Biji Kopi Tarutung</h4></a>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Rp.75.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------- offer ---------->
+    <div class="offer" style="background-image: url(../TES/images/background.jpg);background-size: 150%; background-repeat: no-repeat;">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/kopi-sipirok.png" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Excluesively Available on Andib Coffe Beans</p>
+            <h1>Classy Tradtional Coffe Beans from North Sumatera</h1>
+            <small>Jangan lupa nanti deskripsiin ya diriku</small>
+            <a href="products.html" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- testimonial ---------->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>bagus bagus bagus, jaya jaya jaya</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="images/adib.png" />
+            <h3>Adib</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>bagus bagus bagus, jaya jaya jaya</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="images/pic-2.png" />
+            <h3>ga tau</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>bagus bagus bagus, jaya jaya jaya</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img src="images/pic-3.png" />
+            <h3>sama gatau juga</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- footer ---------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>HOPE YOU'RE ENJOY</h3>
+            <p>This is our first Web Design</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/logo.jpg.jfif" width="115px" />
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Coffe Beans to the Many</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>FaceBook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright - proyek 1</p>
+      </div>
+    </div>
+    <!----------js for toggle menu---------->
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
+</html>
